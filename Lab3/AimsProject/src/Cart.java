@@ -73,15 +73,15 @@ public class Cart {
 		return t;
 	}
 	
-//	//print all disk in cart
-//	public void print() {
-//		System.out.println("****************CART**************\n");
-//		System.out.println(toString());
-//		System.out.println("**********************************\n");
-//	}
-//	
-//	
-//	//check matched disk
+	//print all disk in cart
+	public void print() {
+		System.out.println("****************CART**************\n");
+		System.out.println(toString());
+		System.out.println("**********************************\n");
+	}
+	
+	
+	//check matched disk
 //	public boolean isMatching(String title) {
 //		for (DigitalVideoDisc digitalVideoDisc : itemsOrdered) {
 //			if(digitalVideoDisc.getTitle().equals(title)) {
