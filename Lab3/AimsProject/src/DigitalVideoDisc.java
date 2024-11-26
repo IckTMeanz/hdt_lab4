@@ -7,10 +7,10 @@ public class DigitalVideoDisc {
     private float cost;
     
     
-//    //instance member
-//    private int id;
-//    //classifier member
-//    private static int nbDigitalVideoDiscs=0;
+    //instance member
+    private int id;
+    //classifier member
+    private static int nbDigitalVideoDiscs=0;
 	public String getTitle() {
 		return title;
 	}
