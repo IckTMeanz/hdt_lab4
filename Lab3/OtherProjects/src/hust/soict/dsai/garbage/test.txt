@@ -1,0 +1,200 @@
+Object-Oriented Programming 
+
+Lecturer:  
+
+Teaching Assistant:  
+
+ 
+
+Lab 03: Basic Object-Oriented Techniques 
+
+ 
+
+In this lab, you will practice with:  
+
+Working with Release workflow 
+
+Method overloading  
+
+Parameter passing 
+
+Classifier member vs. Instance member 
+
+Practicing memory management with String and StringBuffer and other cases 
+
+Debugging with Eclipse 
+
+Re-organizing your project by creating packages to manage classes in Eclipse 
+
+Assignment Submission 
+
+For this lab class, you will have to turn in your work twice, specifically: 
+
+Right after the class: for this deadline, you should include any work you have done within the lab class. 
+
+10PM three days after the class: for this deadline, you should include the source code of all sections of this lab, into a branch namely “release/lab03” of the valid repository. 
+
+After completing all the exercises in the lab, you have to update the use case diagram and the class diagram of AIMS project. 
+
+Each student is expected to turn in his or her own work and not give or receive unpermitted aid. Otherwise, we would apply extreme methods for measurement to prevent cheating. Please write down answers for all questions into a text file named “answers.txt” and submit it within your repository. 
+
+Branch your repository 
+
+Day after day, your repository becomes more and more sophisticated, which makes your codes harder to manage. Luckily, a Git workflow can help you tackle this. A Git workflow is a recipe for how to use Git to control source code in a consistent and productive manner. Release Flow1 is a lightweight but effective Git workflow that helps teams cooperate with a large size and regardless of technical expertise. Refer to the Release-Flow-Guidelines.pdf file for a more detailed guide. 
+
+Applying Release Flow is required from this lab forward. 
+
+However, we would use a modified version of Release Flow for simplicity. 
+
+We can create as many branches as we need. 
+
+We name branches with meaningful names. See Table 1-Branching policy.  
+
+We had better keep branches as close to master as possible; otherwise, we could face merge hell. 
+
+Generally, when we merge a branch with its origin, that branch has been history. We usually do not touch it a second time. 
+
+We must strictly follow the policy for release branch. Others are flexible. 
+
+ 
+
+Branch 
+
+Naming  
+
+convention 
+
+Origin 
+
+Merge to 
+
+Purpose 
+
+feature or topic 
+
++ feature/feature-name 
++ feature/feature-area/feature-name 
+
++ topic/description 
+
+master 
+
+master  
+
+Add a new feature or a topic 
+
+bugfix 
+
+bugfix/description 
+
+master  
+
+master 
+
+Fix a bug 
+
+feature 
+
+feature 
+
+hotfix 
+
+hotfix/description 
+
+release 
+
+release & master[1] 
+
+Fix a bug in a submitted assignment after deadline 
+
+refactor 
+
+refactor/description 
+
+master  
+
+master 
+
+Refactor 
+
+feature 
+
+feature 
+
+release 
+
+release/labXX 
+
+master 
+
+none 
+
+Submit assignment [2] 
+
+Table 1: Branching policy 
+
+[1] If we want to update your solutions within a week after the deadline, we could make a new hotfix branch (e.g., hotfix/stop-the-world). Then we merge the hotfix branch with master and with release branch for last submitted assignment (e.g., release/lab05). In case we already create a release branch for the current week assignment (e.g., release/lab06), we could merge the hotfix branch with the current release branch if need be, or we can delete and then recreate current release branch. 
+
+[2] Latest versions of projects in release branch serve as the submitted assignment 
+
+Let’s use Release Flow as our Git workflow and apply it to refactor our repositories. 
+
+Step 1: Create new branch in our local repository. We create a new branch refactor/apply-release-flow from our master branch.  
+
+Step 2: Make our changes, test them, and push them. We move the latest versions of all our latest file from previous labs such that they are under the master branch directly.  
+
+See https://www.atlassian.com/git/tutorials/undoing-changes to undo changes in case of problems. To improve commit message, see https://thoughtbot.com/blog/5-useful-tips-for-a-better-commit-message. 
+
+Step 3: Make a pull request for reviews from our teammates2. We skip this step since we are solo in this repository. We, however, had better never omit this step when we work as a team. 
+
+Step 4: Merge branches. Merge the new branch refactor/apply-release-flow into master branch. 
+
+The result is shown in the following figure.  
+
+ 
+
+Figure 1. Merging result 
+
+Hints: 
+
+Typical steps for a new branch: 
+
+  Create and switch to a new branch (e.g. abc) in the local repo: git checkout -b abc 
+
+  Make modification in the local repo 
+
+  Commit the change in the local repo: git commit -m “What you had change” 
+
+  Create a new branch (e.g. abc) in the remote repo (GitHub through GUI)  
+
+  Push the local branch to the remote branch: git push origin abc 
+
+  Merge the remote branch (e.g. abc) to the master branch (GitHub through GUI) 
+
+ 
+
+After completing all the tasks of that week, and merge all branches into master branch, you should create a release/labxx branch from the master in the remote repo (GitHub). 
+
+ 
+
+For example, in the lab03, there may be 9 main tasks. So, one possible way to apply release flow is to create 9 branches: 
+
+Create a branch refactor/apply-release-flow for refactoring the repository following the Release Flow 
+
+Create a branch topic/method-overloading for the exercise on method overloading 
+
+Create a branch topic/passing-parameter for the exercise where you investigate on Java’s parameter passing 
+
+Create a branch topic/class-members for the exercise where you practice with classifier member and instance member 
+
+Create a branch feature/print-cart for the implementation of the print items in cart feature 
+
+Create a branch feature/search-cart for the implementation of the search items in cart feature 
+
+Create a branch topic/store for the implementation of the class Store 
+
+Create a branch refactor/packages for refactoring the projects in your repository using packages 
+
+Create a branch topic/memory-management-string for the String, StringBufer & StringBuilder exercise 
+
+Refer to the demonstration of Release Flow in the last section of this lab for more detailed guide. 
