@@ -1,3 +1,4 @@
+package hust.soict.dsai.aims.store;
 
 import hust.soict.dsai.aims.disc.DigitalVideoDisc;
 
