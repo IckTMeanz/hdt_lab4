@@ -82,14 +82,14 @@ public class Cart {
 	
 	
 	//check matched disk
-//	public boolean isMatching(String title) {
-//		for (DigitalVideoDisc digitalVideoDisc : itemsOrdered) {
-//			if(digitalVideoDisc.getTitle().equals(title)) {
-//				return true;
-//			}
-//		}
-//		return false;
-//	}
+	public boolean isMatching(String title) {
+		for (DigitalVideoDisc digitalVideoDisc : itemsOrdered) {
+			if(digitalVideoDisc.getTitle().equals(title)) {
+				return true;
+			}
+		}
+		return false;
+	}
 	
     
     
